@@ -1,4 +1,10 @@
 package ploblem;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
 public class CalculatorRoma {
 
 /*
@@ -48,16 +54,81 @@ X	10
 	
 	
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		boolean off = false;
+		
+		//while(off) {
+//			String inputValue = br.readLine();
+//			String[] splitValue = inputValue.split(" ");
+//			System.out.println(splitValue[0]);
+//			System.out.println(splitValue[1]);
+//			System.out.println(splitValue[2]);
+		//}
+		
+		String III = "aa";
+		//System.out.println(changer(III));
+		
+		switch(III) {
+		case "I":
+			System.out.println(3);
+		case "II":
+			System.out.println(3);
+		case "III":
+			System.out.println(3);
+		case "IV":
+			System.out.println(3);
+		case "V":
+			System.out.println(3);
+		case "VI":
+			System.out.println(3);
+		case "VII":
+			System.out.println(3);
+		case "VIII":
+			System.out.println(3);
+		case "IX":
+			System.out.println(3);
+		case "X":
+			System.out.println(3);
+		}	
+		
+		if(III.equals("III")) {
+			System.out.println(5);
+		}
 		
 		
+	}
+	
+	public static int changer(String romaNum) {	
+		switch(romaNum) {
+		case "I":
+			return 1;
+		case "II":
+			return 2;
+		case "III":
+			return 3;
+		case "IV":
+			return 4;
+		case "V":
+			return 5;
+		case "VI":
+			return 6;
+		case "VII":
+			return 7;
+		case "VIII":
+			return 8;
+		case "IX":
+			return 9;
+		case "X":
+			return 10;
+		}	
 		
+		if(romaNum.equals("III")) {
+			return 333;
+		}
 		
-		
-		
-		
-		
+		return 0;
 	}
 
 }
