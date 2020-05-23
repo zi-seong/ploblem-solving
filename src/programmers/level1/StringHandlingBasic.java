@@ -12,7 +12,7 @@ package programmers.level1;
 
 
 //아스키코드를 이용한 해결방법
-public class Solution {
+public class StringHandlingBasic {
 	 	public boolean solution(String s) {
 	        boolean answer = true;
 	        if(s.length()!=4 && s.length()!=6){
@@ -30,7 +30,7 @@ public class Solution {
 
 //다른분들의 해결방법
 /*
- * 
+  
 1.try catch를 사용해 string타입에서 int타입으로 캐스팅도중에 생기는 오류를 사용한 풀이방법
 class Solution {
     public boolean solution(String s) {
@@ -50,9 +50,8 @@ class Solution {
 2.정규식을 이용한 해결방법
 		if (s.length() == 4 || s.length() == 6) return s.matches("(^[0-9]*$)");
         return false;
+        
 3.삼항연산자를 사용하고 split을 사용한 해결방법
 		return (s.length() != 4 && s.length() != 6) || (s.split("[0-9]").length > 0) ? false:true;
 
-
- * 
  */
